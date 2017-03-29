@@ -2,7 +2,7 @@ package weiser;
 
 public class Fibonacci {
 
-	public int fibonacci(int z) {
+	public long fibonacci(int z) {
 		if (z == 1 || z == 2) {
 			return 1;
 		}
@@ -10,8 +10,9 @@ public class Fibonacci {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Fibonacci f = new Fibonacci();
+		System.out.println("Fibonacci(" + 7 + ") = " + f.fibonacci(7));
+		System.out.println("Fibonacci(" + 17 + ") = " + f.fibonacci(17));
 	}
 
 }
