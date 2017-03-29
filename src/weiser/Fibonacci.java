@@ -2,7 +2,10 @@ package weiser;
 
 public class Fibonacci {
 
-	public int fibonacci(int z) {
+	public static  int fibonacci(int z) {
+		if (z <= 0) {
+			throw new IllegalArgumentException();
+		}
 		if (z == 1 || z == 2) {
 			return 1;
 		}
